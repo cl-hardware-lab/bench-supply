@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name HW-lab-power)(type KiCad)(uri ${KIPRJMOD}/HW-lab-power.pretty)(options "")(descr ""))
+)

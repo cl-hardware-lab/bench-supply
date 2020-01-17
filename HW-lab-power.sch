@@ -1,0 +1,315 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5E133ACB
+P 5000 2300
+F 0 "J1" H 4918 2075 50  0000 C CNN
+F 1 "+12V" H 4918 2166 50  0000 C CNN
+F 2 "HW-lab-power:552-0100" H 5000 2300 50  0001 C CNN
+F 3 "~" H 5000 2300 50  0001 C CNN
+F 4 "2112491" H 5000 2300 50  0001 C CNN "Farnell"
+	1    5000 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5E134262
+P 4550 2800
+F 0 "J2" H 4468 2575 50  0000 C CNN
+F 1 "+5V" H 4468 2666 50  0000 C CNN
+F 2 "HW-lab-power:552-0100" H 4550 2800 50  0001 C CNN
+F 3 "~" H 4550 2800 50  0001 C CNN
+F 4 "2112491" H 4550 2800 50  0001 C CNN "Farnell"
+	1    4550 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5E134B30
+P 5000 3700
+F 0 "J3" H 4918 3475 50  0000 C CNN
+F 1 "+3V3" H 4918 3566 50  0000 C CNN
+F 2 "HW-lab-power:552-0100" H 5000 3700 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+F 4 "2112491" H 5000 3700 50  0001 C CNN "Farnell"
+	1    5000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5E134F91
+P 6450 3650
+F 0 "J4" H 6368 3425 50  0000 C CNN
+F 1 "GND" H 6368 3516 50  0000 C CNN
+F 2 "HW-lab-power:552-0100" H 6450 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+F 4 "2112490" H 6450 3650 50  0001 C CNN "Farnell"
+	1    6450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5E13884E
+P 7150 3000
+F 0 "J5" H 7230 2992 50  0000 L CNN
+F 1 "PWR" H 7230 2901 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x04_P7.62mm_Drill2.5mm" H 7150 3000 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+	1    7150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5E139270
+P 7650 3150
+F 0 "J6" H 7730 3192 50  0000 L CNN
+F 1 "SW" H 7730 3101 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill1.5mm" H 7650 3150 50  0001 C CNN
+F 3 "~" H 7650 3150 50  0001 C CNN
+	1    7650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3700 5500 3700
+Wire Wire Line
+	6050 3700 6050 3100
+Wire Wire Line
+	6050 3100 6950 3100
+Wire Wire Line
+	5000 3000 5400 3000
+Wire Wire Line
+	5200 2300 5300 2300
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E13B914
+P 7450 3350
+F 0 "SW1" V 7496 3262 50  0000 R CNN
+F 1 "SW_SPST" V 7405 3262 50  0000 R CNN
+F 2 "HW-lab-power:DIP-6_226_ELL" H 7450 3350 50  0001 C CNN
+F 3 "~" H 7450 3350 50  0001 C CNN
+	1    7450 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 5E13CC8A
+P 5300 2400
+F 0 "D1" V 5346 2332 50  0000 R CNN
+F 1 "LED_Small" V 5255 2332 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 5300 2400 50  0001 C CNN
+F 3 "~" V 5300 2400 50  0001 C CNN
+	1    5300 2400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5300 2300
+Wire Wire Line
+	5300 2300 6050 2300
+$Comp
+L Device:LED_Small D2
+U 1 1 5E13E7AC
+P 5400 3100
+F 0 "D2" V 5446 3032 50  0000 R CNN
+F 1 "LED_Small" V 5355 3032 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 5400 3100 50  0001 C CNN
+F 3 "~" V 5400 3100 50  0001 C CNN
+	1    5400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 5E13EDEF
+P 5500 3800
+F 0 "D3" V 5546 3732 50  0000 R CNN
+F 1 "LED_Small" V 5455 3732 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 5500 3800 50  0001 C CNN
+F 3 "~" V 5500 3800 50  0001 C CNN
+	1    5500 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3700 6050 3700
+$Comp
+L Device:R_Small R3
+U 1 1 5E140F1A
+P 5500 4000
+F 0 "R3" H 5559 4046 50  0000 L CNN
+F 1 "680r" H 5559 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 4000 50  0001 C CNN
+F 3 "~" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 3700
+$Comp
+L Device:R_Small R2
+U 1 1 5E14428F
+P 5400 3300
+F 0 "R2" H 5459 3346 50  0000 L CNN
+F 1 "1k5" H 5459 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5400 3300 50  0001 C CNN
+F 3 "~" H 5400 3300 50  0001 C CNN
+	1    5400 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 3000
+$Comp
+L Device:R_Small R1
+U 1 1 5E14562F
+P 5300 2600
+F 0 "R1" H 5359 2646 50  0000 L CNN
+F 1 "5k6" H 5359 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 2600 50  0001 C CNN
+F 3 "~" H 5300 2600 50  0001 C CNN
+	1    5300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E1510FF
+P 7050 4150
+F 0 "H1" H 7150 4196 50  0000 L CNN
+F 1 "MountingHole" H 7150 4105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm" H 7050 4150 50  0001 C CNN
+F 3 "~" H 7050 4150 50  0001 C CNN
+	1    7050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E1519D8
+P 7050 4350
+F 0 "H2" H 7150 4396 50  0000 L CNN
+F 1 "MountingHole" H 7150 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.7mm" H 7050 4350 50  0001 C CNN
+F 3 "~" H 7050 4350 50  0001 C CNN
+	1    7050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J7
+U 1 1 5E159BAB
+P 4450 3400
+F 0 "J7" H 4507 3867 50  0000 C CNN
+F 1 "USB_A" H 4507 3776 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 4600 3350 50  0001 C CNN
+F 3 " ~" H 4600 3350 50  0001 C CNN
+F 4 "1758742" H 4450 3400 50  0001 C CNN "Farnell"
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3200 5000 3200
+Wire Wire Line
+	5000 3200 5000 3000
+Wire Wire Line
+	5000 3000 5000 2800
+Wire Wire Line
+	5000 2800 4750 2800
+Connection ~ 5000 3000
+NoConn ~ 4350 3800
+Wire Wire Line
+	4750 3400 4750 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5E17531B
+P 7450 3550
+F 0 "#PWR?" H 7450 3300 50  0001 C CNN
+F 1 "GND" H 7455 3377 50  0000 C CNN
+F 2 "" H 7450 3550 50  0001 C CNN
+F 3 "" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E179A17
+P 6950 3200
+F 0 "#PWR?" H 6950 2950 50  0001 C CNN
+F 1 "GND" H 6955 3027 50  0000 C CNN
+F 2 "" H 6950 3200 50  0001 C CNN
+F 3 "" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E179E50
+P 4450 3800
+F 0 "#PWR?" H 4450 3550 50  0001 C CNN
+F 1 "GND" H 4455 3627 50  0000 C CNN
+F 2 "" H 4450 3800 50  0001 C CNN
+F 3 "" H 4450 3800 50  0001 C CNN
+	1    4450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E17A3DD
+P 5500 4100
+F 0 "#PWR?" H 5500 3850 50  0001 C CNN
+F 1 "GND" H 5505 3927 50  0000 C CNN
+F 2 "" H 5500 4100 50  0001 C CNN
+F 3 "" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E17FA52
+P 6650 3650
+F 0 "#PWR?" H 6650 3400 50  0001 C CNN
+F 1 "GND" H 6655 3477 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E17FED7
+P 5400 3400
+F 0 "#PWR?" H 5400 3150 50  0001 C CNN
+F 1 "GND" H 5405 3227 50  0000 C CNN
+F 2 "" H 5400 3400 50  0001 C CNN
+F 3 "" H 5400 3400 50  0001 C CNN
+	1    5400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E180516
+P 5300 2700
+F 0 "#PWR?" H 5300 2450 50  0001 C CNN
+F 1 "GND" H 5305 2527 50  0000 C CNN
+F 2 "" H 5300 2700 50  0001 C CNN
+F 3 "" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 2300
+Wire Wire Line
+	5400 3000 6950 3000
+Text Label 6050 2900 0    50   ~ 0
+12V
+Text Label 6050 3000 0    50   ~ 0
+5V
+Text Label 6050 3100 0    50   ~ 0
+3V3
+$EndSCHEMATC
